@@ -11,3 +11,10 @@ Este proyecto consiste en desarrollar una calculadora de matrices en Java que pe
 ## Tecnologías Utilizadas
 - Java
 - Git (para el control de versiones)
+## Futuros Requerimientos
+A medida que el proyecto avance, considerar la posibilidad de agregar más funcionalidades como:
+
+- Operaciones de suma, resta y multiplicación de matrices.
+- Validaciones de entrada para garantizar que las matrices sean válidas.
+- Soporte para matrices de diferentes dimensiones.
+- Una interfaz de usuario (GUI) para una experiencia más amigable.
