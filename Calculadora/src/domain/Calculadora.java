@@ -18,7 +18,7 @@ public class Calculadora {
 		//Si es 2x2 la det es la diferencia de las diagonales superior e inferior
 		}else if(matriz.length == 2 && matriz[0].length == 2) {
 			det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
-			//System.out.println(det);
+			//System.out.println(det);asd
 			
 			
 		}else{
