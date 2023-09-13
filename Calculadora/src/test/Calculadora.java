@@ -1,13 +1,14 @@
-package domain;
+package test;
 
 public class Calculadora {
-
+	
 	//constructor
 	public Calculadora() {
 		
 	}
 	
 	//metodos
+	
 	//funcion para calcular la determinante de una matriz
 	public double calcularDeterminante(double matriz[][]){
 		
@@ -18,7 +19,7 @@ public class Calculadora {
 		//Si es 2x2 la det es la diferencia de las diagonales superior e inferior
 		}else if(matriz.length == 2 && matriz[0].length == 2) {
 			det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
-			//System.out.println(det);
+			//System.out.println(det);asd
 			
 			
 		}else{
@@ -42,7 +43,7 @@ public class Calculadora {
 			det_final += det_submatriz;
 			//System.out.println(det_final + "\n");
 		}
-		r
+		
 		
 		return det_final;
 	}
@@ -69,6 +70,7 @@ public class Calculadora {
 	        	submatriz[i][j] = matriz[f][c];
 	        }
 	    }
+	    System.out.println("Submatriz generada:\n");
 	    this.imprimirMatriz(submatriz);
 	    return submatriz;
 	}
@@ -76,8 +78,8 @@ public class Calculadora {
 	//funcion que calcula el cofactor de la submatriz
 	private double calcularCofactor(double submatriz[][], int exp, double escalar) {
 		//formula del cofactor
-		double cofactor = Math.pow(-1, exp) * escalar * this.calcularDeterminante(matriz);
-		System.out.println(cofactor + "\n");
+		double cofactor = Math.pow(-1, exp) * escalar * this.calcularDeterminante(submatriz);
+		System.out.println("Cofactor de la submatriz = " + cofactor + "\n");
 		return cofactor;
 	}
 	
